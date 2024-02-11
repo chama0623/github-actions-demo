@@ -18,8 +18,9 @@ jobs:
         uses: snok/install-poetry@v1
 
       - name: Install Dependencies
-        uses: |
+        run: |
           cd calculator
           poetry install
+
       - name: Run tests
         run: poetry run python -m pytest
