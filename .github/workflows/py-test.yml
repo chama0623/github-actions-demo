@@ -23,4 +23,6 @@ jobs:
           poetry install
 
       - name: Run tests
-        run: poetry run python -m pytest
+        run: |
+          cd calculator
+          poetry run python -m pytest
