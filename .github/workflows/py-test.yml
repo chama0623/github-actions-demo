@@ -15,9 +15,7 @@ jobs:
           python-version: 3.12
 
       - name: Install Poetry
-        uses: 
-          snok/install-poetry@v1
-          poetry -V
+        uses: snok/install-poetry@v1
 
       - name: Run tests
         run: poetry run python -m pytest
