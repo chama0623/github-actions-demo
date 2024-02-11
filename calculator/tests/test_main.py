@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from src.main import add
+from calculator.main import add
 
 
 class MainTestCase(TestCase):
