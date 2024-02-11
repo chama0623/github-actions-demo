@@ -41,4 +41,7 @@ jobs:
         run: echo Hoge World!!
 
   huga:
-    runs-on: error-here
+    runs-on: ubuntu-latest
+    steps:
+      - name: Huga Step
+        run: echo Fix this Job!
