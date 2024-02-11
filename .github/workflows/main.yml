@@ -39,3 +39,9 @@ jobs:
     steps:
       - name: Hoge Step
         run: echo Hoge World!!
+
+  huga:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Huga Step
+        run: echo HugaHuga
