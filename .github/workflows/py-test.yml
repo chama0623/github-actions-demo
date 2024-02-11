@@ -10,15 +10,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3 # このリポジトリのデータを読み込む
       - name: Python Setup
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v4
         with:
-          python-version: 3.12
+          python-version: 3.11
       
       - name: Setup Poetry
-        uses: Gr1N/setup-poetry@v7
+        uses: Gr1N/setup-poetry@v8
       
       - name: Run poetry install
-        run: poetry install
+        run: 
+          poetry install
+          poetry --version
       
       - name: Run tests
         run: poetry run python -m pytest 
